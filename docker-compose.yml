@@ -16,7 +16,7 @@ services:
       TYPE: FABRIC
       MAX_PLAYERS: 2
       SERVER_NAME: ${SERVER_NAME}
-      MOTD: ${MOTD}"Join for extra sauce"
+      MOTD: ${MOTD}
       ICON: ${ICON_URL}
       MODRINTH_PROJECTS: |
         ${MODRINTH_MODS}
