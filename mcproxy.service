@@ -1,0 +1,12 @@
+[Unit]
+Description=Minecraft TCP Proxy
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/socat TCP-LISTEN:25565,fork TCP:${TAILSCALE_MC_SERVER_IP}:25565
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
