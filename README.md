@@ -24,7 +24,7 @@ After some trial and error, I found out that the issue was Minecraft's raw TCP t
 Oh, well.
 
 ### Option Two: Proxy Server
-I remembered I had my student benefits from Github and redeemed my $200 credit on Digital Ocean. I spun up a droplet on the cheapest server, starting at $4 per month. This got me 512 MB of RAM, 1 vCPU, and a whopping 10 GB SSD. Oh, and a static ip which is nice.
+I remembered I had my student benefits from Github and redeemed my $200 credit on Digital Ocean. I spun up a droplet on the cheapest server, starting at $4 per month. This got me 512 MB of RAM, 1 vCPU, and a whopping 10 GB SSD. Oh, and a static IP which is nice.
 
 This beast is going to be our proxy server that mc.pointtomyserver.xyz will resolve to. The set up process was fairly simple for this machine.
 
