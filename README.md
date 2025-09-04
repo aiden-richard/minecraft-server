@@ -6,7 +6,7 @@ When building this server (still a work in progress), I experimented with a few 
 ## Hosting
 A couple of months ago I purchased an old HP workstation on ebay for cheap. It has 16 GB RAM, Intel Core i7-7700, and enough storage for this project.
 
-This is what we are going to be hosting the Minecraft server on. I am also running the Minecraft server in a docker container on this machine for ease of use. I am using the [https://github.com/itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server) docker image for this.
+This is what we are going to be hosting the Minecraft server on. I am also running the Minecraft server inside a docker container on this machine for ease of use. I am using the [https://github.com/itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server) docker image for this.
 
 The host machine runs tailscale VPN which lets me or my friends connect to the server from any device I invite to the tailscale network. This will come up later.
 
@@ -15,7 +15,7 @@ Once I had the Minecraft server running, I wanted to put it up on my domain. The
 ## Forwarding Traffic
 
 ### Option One: Cloudflare Tunnels
-Cloudflare Tunnels allow you to securely route traffic from the internet to your local server without exposing your server’s public IP address. I use Cloudflare to manage my domain and have previously used tunnels as a super easy way to serve a self-hosted app on your domain. This method is very clean because the tunnel sits in another Docker container and just passes traffic to the main app container, all without revealing my home IP.
+Cloudflare Tunnels allow you to securely route traffic from the internet to your local server without exposing your server’s public IP address. I use Cloudflare to manage my domain and have previously used tunnels as a super easy way to serve a self-hosted app on your domain. This method is very clean because the tunnel sits inside of another Docker container and just passes traffic to the main app's container, all without revealing my home IP or forwarding any ports.
 
 **The problem: Minecraft uses raw TCP**  
 
