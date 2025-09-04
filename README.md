@@ -1,5 +1,5 @@
 # Overview
-This repo contains the set up files for a public facing Minecraft server. This README will go over how I host the Minecraft server which is served on my domain at: mc.pointtomyserver.xyz (using a whitelist for invited players and filtered network traffic with Cloudflare zero-trust).
+This repo contains the set up files for a public facing Minecraft server. This README will go over how I host the Minecraft server which is served on my domain at: mc.pointtomyserver.xyz (using a whitelist for invited players and filtered network traffic with Cloudflare zero-trust). If the domain is typed into a web browser, a live google earth style map of the server is shown.
 
 When building this server (still a work in progress), I experimented with a few different stacks but landed on a setup that I think is pretty clean.
 
